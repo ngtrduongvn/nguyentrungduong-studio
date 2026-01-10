@@ -9,7 +9,20 @@ body {
     color: black;
     font-family: sans-serif;
     line-height: 1.6;
+    /* animation: pageIn 0.5s ease;
+    will-change: opacity, transform; */
 }
+
+/* @keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
 
 html, body {
     height: 100%;
@@ -55,7 +68,7 @@ html, body {
     padding-bottom: 16px;
 }
 
-.sub_body_changelog {
+.subsection_body_consolas {
     font-family: Consolas, "Courier New", Courier, monospace;
     padding-bottom: 16px;
 }
@@ -96,5 +109,10 @@ a.active {
 
 a {
     color: #0000FF;
+    text-decoration: none;
 
+}
+a:hover {
+    font-weight: bold;
+    
 }

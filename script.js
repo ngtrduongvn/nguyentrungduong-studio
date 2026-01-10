@@ -1,7 +1,4 @@
-/**
- * Website Protection Script - Optimized for 2026
- * Chặn F12, Ctrl+U, Chuột phải, Kéo thả và DevTools
- */
+// * SECURITY *
 
 (function() {
     'use strict';
@@ -32,8 +29,7 @@
     // 3. Chặn kéo thả hình ảnh
     document.addEventListener('dragstart', preventAction);
 
-    // 4. Phát hiện và gây khó khăn cho việc mở DevTools (Tối ưu hơn debugger cũ)
-    // Thay vì chạy liên tục 100ms (tốn CPU), chỉ kích hoạt khi cửa sổ thay đổi kích thước
+    // 4. Phát hiện và gây khó khăn cho việc mở DevTools
     const checkDevTools = function() {
         const threshold = 160;
         if (window.outerWidth - window.innerWidth > threshold || 
