@@ -121,3 +121,9 @@ a {
 a:hover {
     font-weight: bold;
 }
+
+
+/* Footer */
+footer {
+    padding-top: 20px;
+}
